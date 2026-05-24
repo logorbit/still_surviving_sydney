@@ -1,0 +1,1324 @@
+{
+  "events": [
+    {
+      "id": "event_001",
+      "category": "Academic Pressure",
+      "title": "Group Assignment Ghosted",
+      "repeatable": true,
+      "description": "Your group member has vanished into thin air. No messages, no commits, just a Whatsapp profile picture of a beach. The assignment is due in three days.",
+      "choices": [
+        {
+          "text": "[STUDY] Do their share yourself and cry later T_T",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You pull two all-nighters and cram their sections. The work is submitted, but you feel hollow and exhausted.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Inform the tutor and ask for an extension",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "The tutor understands and grants a 24-hour extension. The ghost reappears briefly to grumble but does nothing. You get a fairer workload.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Confront them in the tutorial in front of everyone",
+          "hp_change": -8,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "The confrontation is spectacularly awkward. They mumble about 'personal issues'. You still do the work but now everyone avoids you.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_002",
+      "category": "Academic Pressure",
+      "title": "Plagiarism Check Panic",
+      "repeatable": true,
+      "description": "You submit your essay and Turnitin returns a similarity score of 34%. Most of it is highlighted quotes, but your stomach drops regardless.",
+      "choices": [
+        {
+          "text": "[STUDY] Rewrite the flagged sections overnight T_T",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You stay up until 4am paraphrasing every suspect sentence. The resubmission passes cleanly, but you are wrecked.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Email the lecturer with a clear explanation",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "The lecturer appreciates your honesty and notes that the heavy reliance on quotes is borderline but acceptable with minor fixes. Panic subsides.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Ignore it and hope nobody notices -_-",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You try to forget about it, but for two weeks you jump every time an email notification pings. It passes, but your nerves are fried.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_003",
+      "category": "Academic Pressure",
+      "title": "Forgotten Student ID on Exam Day",
+      "repeatable": true,
+      "description": "You arrive at the massive exam hall and the invigilator sternly asks for your student ID. You pat your pockets and realise it is still on your desk at home.",
+      "choices": [
+        {
+          "text": "[REST] Go home and get it, arrive late but calm",
+          "hp_change": -8,
+          "san_change": 5,
+          "money_change": -27,
+          "result_text": "You speed home on the bus, grab the card, and rush back. You lose 20 minutes of writing time but are allowed in.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Beg the invigilator to accept alternative ID",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "After a tense ten-minute interrogation, they accept your digital student portal and a birth certificate photo on your phone. You sit down drenched in sweat.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Borrow a friend's spare ID card >_<",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "The friend is outside and lends you their old card. The photo is nothing like you. You spend the exam terrified of being caught and eventually you are pulled aside for questioning. No valid score recorded.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_004",
+      "category": "Academic Pressure",
+      "title": "Supervisor's Feedback: Topic Too Broad",
+      "repeatable": false,
+      "description": "Your research proposal meets the dreaded phrase 'needs to be more focused'. Your supervisor suggests narrowing the scope, but you feel the entire project will collapse.",
+      "choices": [
+        {
+          "text": "[STUDY] Gratefully accept the feedback and refine",
+          "hp_change": -8,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "You cut two chapters, sharpen the main argument, and the proposal becomes stronger. Supervisor is visibly impressed.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Argue passionately that the scope is perfect",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You defend your original idea with fire. The supervisor looks taken aback and notes your 'attitude'. The relationship cools, and later they refuse to write a reference letter.",
+          "trigger_event": "event_008"
+        },
+        {
+          "text": "[HELP] Seek a second opinion from another academic",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": -27,
+          "result_text": "You buy coffee for a friendly lecturer who helps you see the feedback as constructive. The proposal improves, and you avoid a conflict.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_005",
+      "category": "Academic Pressure",
+      "title": "All-Nighter for Coding Assignment",
+      "repeatable": true,
+      "description": "It is 11pm and your code still throws a segmentation fault. The assignment is worth 30% and due at 9am. Sleep is a distant dream.",
+      "choices": [
+        {
+          "text": "[STUDY] Caffeine marathon until it works T_T",
+          "hp_change": -15,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "At 7am you finally squash the bug. You submit with seconds to spare, then crash into a deep, unsatisfying sleep. You feel like a zombie for days.",
+          "trigger_event": null
+        },
+        {
+          "text": "[REST] Accept partial submission and go to bed -_-",
+          "hp_change": 10,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You comment out the broken section, write a short document explaining what you intended, and sleep 6 hours. You lose marks but save your health.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Borrow a friend's solution and modify it",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You tweak variable names and submit. Weeks later an automated similarity check flags it. You face an academic integrity panel, but narrowly escape with a warning. Your anxiety spikes.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_006",
+      "category": "Academic Pressure",
+      "title": "Group Presentation with a Dominant Partner",
+      "repeatable": true,
+      "description": "Your presentation partner is a native English speaker who talks over you and rearranges your slides without asking. You feel like a decorative plant with a laser pointer.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Let them lead and just smile through it",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "The presentation goes smoothly but you feel invisible. Your contribution mark probably suffers, but there was no conflict.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Assert your ideas firmly mid-presentation",
+          "hp_change": -8,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You interrupt politely but firmly, redirecting to your prepared points. The audience looks confused but you regain control. Your partner is frosty afterwards.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Practise together over coffee beforehand :)",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -27,
+          "result_text": "You buy them a flat white and gently explain the issue. They apologise and you divide speaking time fairly. The presentation becomes a success.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_007",
+      "category": "Academic Pressure",
+      "title": "Workshop vs Shift Conflict",
+      "repeatable": true,
+      "description": "A free referencing workshop is on the same afternoon as your regular cafe shift. Both would significantly impact your week.",
+      "choices": [
+        {
+          "text": "[STUDY] Skip the shift to attend the workshop",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -108,
+          "result_text": "You learn the dark arts of Endnote and Zotero. Future assignments will be faster, but you miss the shift pay.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Skip the workshop and earn cash",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 80,
+          "result_text": "You pocket a decent shift but feel a pang of guilt when you hand-format every reference at 2am the following week.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Try to swap shifts and hope for the best",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 40,
+          "result_text": "You find someone to take half your shift. You attend the core part of the workshop but miss the first 30 minutes. You get half pay and half knowledge.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_008",
+      "category": "Academic Pressure",
+      "title": "Last-Minute Reference Letter",
+      "repeatable": false,
+      "description": "A scholarship application requires a referee report by midnight. The professor who previously agreed has not replied to your reminder emails.",
+      "choices": [
+        {
+          "text": "[HELP] Call their office phone repeatedly",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "After eight rings, the professor picks up annoyed but agrees to write a brief letter. You get a generic but timely reference.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Forge a letter and hope no one checks >_<",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You cobble together a letter. Weeks later the scholarship board contacts the professor to verify. You are immediately disqualified and receive a formal warning.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Submit application without the letter",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You attach a note explaining the missing reference. The application is considered incomplete but you avoid any misconduct. It is unlikely to win.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_009",
+      "category": "Daily Life Struggles",
+      "title": "Opal Card Negative Balance",
+      "repeatable": true,
+      "description": "You tap off the bus but it beeps angrily. Your Opal card balance is -$3.20 and you cannot exit the station barrier.",
+      "choices": [
+        {
+          "text": "[MONEY] Top up online and wait 10 minutes",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": -27,
+          "result_text": "You add extra credit via the app and the barrier eventually updates. You waste time but stay legal.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Leap over the barrier when nobody is looking",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You vault the gate, landing awkwardly on your ankle. No one stops you but your dignity and ankle hurt.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Ask a stranger to let you tailgate out",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "A sympathetic commuter lets you squeeze through. You feel like a criminal but escape without a fine.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_010",
+      "category": "Daily Life Struggles",
+      "title": "Flatmate's Milk Heist",
+      "repeatable": true,
+      "description": "You open the fridge for your morning cereal and find your milk carton is completely empty. Your flatmate's mug of coffee looks suspiciously creamy.",
+      "choices": [
+        {
+          "text": "[FOOD] Drink black coffee and eat dry cereal T_T",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "The meal is joyless and barely edible. You start the day with a grudge and a rumbling stomach.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Go to the corner shop for a new carton",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": -45,
+          "result_text": "You pay convenience-store prices for a tiny carton and emergency snacks because convenience stores have no mercy. At least you have a proper breakfast.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SOCIAL] Confront the flatmate with a passive-aggressive sticky note -_-",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You leave a note saying 'To the milk thief: I hope you enjoyed it :)'. They avoid you for two days but a fresh carton appears mysteriously.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_011",
+      "category": "Daily Life Struggles",
+      "title": "Rent Increase Notice",
+      "repeatable": false,
+      "description": "Your landlord sends a polite email stating the weekly rent will increase by $50 starting next month. Your budget spreadsheet just had a heart attack.",
+      "choices": [
+        {
+          "text": "[SAFE] Accept and cut back on other expenses",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": -72,
+          "result_text": "You tighten your belt, cancel a streaming service, and survive. But the constant financial anxiety nags at you.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Negotiate with the landlord citing market rates",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": -45,
+          "result_text": "You send a carefully worded email with rental comparison data. The landlord agrees to a smaller increase. Partial victory, but your budget still groans.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HOME] Decide to move out and find a cheaper place",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": -207,
+          "result_text": "You spend weeks house-hunting, pay a moving truck, and lose your bond deposit for breaking lease. The new place is cheaper long-term but the short-term hit is huge.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_012",
+      "category": "Daily Life Struggles",
+      "title": "Laundry Coin Disaster",
+      "repeatable": true,
+      "description": "You lug your laundry to the communal machines only to find the coin slot is jammed and swallows your last $2 without starting.",
+      "choices": [
+        {
+          "text": "[HELP] Knock on your neighbour's door for change",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": -13,
+          "result_text": "A kindly neighbour gives you coins and a tip to jiggle the machine. It rumbles to life. You now owe a small social debt.",
+          "trigger_event": null
+        },
+        {
+          "text": "[REST] Handwash essentials in the bathroom sink",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You scrub undies and a t-shirt with hand soap. They smell faintly of shampoo and take two days to dry on the radiator. At least they are clean.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Use the laundromat down the road",
+          "hp_change": 0,
+          "san_change": 0,
+          "money_change": -27,
+          "result_text": "You sigh, carry your heavy bag three blocks, and pay for a wash and dry. Expensive but effective.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_013",
+      "category": "Daily Life Struggles",
+      "title": "Power Outage at Dinner",
+      "repeatable": true,
+      "description": "Just as you begin cooking a real meal, the apartment plunges into darkness. A power outage has hit your suburb and won't be fixed for hours.",
+      "choices": [
+        {
+          "text": "[FOOD] Eat cold canned spaghetti straight from the tin :/",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "It is sad and vaguely metallic but fills a hole. You stare at a wall in the dark until you fall asleep.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Order takeaway delivery to the rescue",
+          "hp_change": 5,
+          "san_change": 5,
+          "money_change": -45,
+          "result_text": "You splurge on Thai delivery. The driver struggles to find your dark building but the warm food lifts your spirits enormously.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SOCIAL] Go to a friend's place and bring your ingredients",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -27,
+          "result_text": "You catch a bus to a friend's apartment. You cook together by candlelight plus their gas stove. It becomes an unexpectedly fun night.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_014",
+      "category": "Daily Life Struggles",
+      "title": "Mild Flu vs Commitments",
+      "repeatable": true,
+      "description": "You wake up with a scratchy throat, a headache, and zero energy. Today you have a lecture worth 10% participation and a four-hour paid shift.",
+      "choices": [
+        {
+          "text": "[REST] Stay in bed all day and recover",
+          "hp_change": 15,
+          "san_change": -8,
+          "money_change": -108,
+          "result_text": "You sleep 14 hours, drink honey tea, and skip everything. You lose the shift pay and participation marks but your body thanks you.",
+          "trigger_event": null
+        },
+        {
+          "text": "[WORK] Push through both commitments",
+          "hp_change": -15,
+          "san_change": -15,
+          "money_change": 100,
+          "result_text": "You drag yourself through the lecture, then serve customers while sweating. You earn the money but now have a full-blown chest infection that lasts two weeks.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Attend the lecture but call in sick for work",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": -45,
+          "result_text": "You drag yourself through the lecture, then cancel the shift. You keep the participation mark, but your manager is annoyed and your body still needs rest.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_015",
+      "category": "Daily Life Struggles",
+      "title": "Cracked Phone Screen",
+      "repeatable": true,
+      "description": "Your phone slithers out of your pocket onto the footpath. The screen now resembles a spider web. Everything still works, but reading is a puzzle.",
+      "choices": [
+        {
+          "text": "[MONEY] Pay for professional screen repair",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": -162,
+          "result_text": "You hand over a week's rent equivalent at the kiosk. An hour later your phone looks brand new. Financially painful but necessary.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Attempt a DIY repair with an online kit",
+          "hp_change": -12,
+          "san_change": -15,
+          "money_change": -72,
+          "result_text": "You order a $30 kit and watch YouTube tutorials. After three hours of frustration, the new screen works but the home button now activates the camera. You accept your new reality.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Live with the cracked screen forever -_-",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You keep using the cracked screen until it slices your finger and makes every message look dramatic. It works, technically, but you live in fear of glass dust.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_016",
+      "category": "Daily Life Struggles",
+      "title": "Grocery Shock and No Bag",
+      "repeatable": true,
+      "description": "You pop into Woolies for basics and leave with a total that makes your eyes water. Avocados are $3.50 each and you forgot your reusable bag.",
+      "choices": [
+        {
+          "text": "[MONEY] Pay for plastic bags and accept the bill",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": -72,
+          "result_text": "You hand over $52 for what feels like four items, plus 30c for two bags. You walk home wondering why you chose to study in this city.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HOME] Ditch some non-essentials and carry loose items",
+          "hp_change": -8,
+          "san_change": -8,
+          "money_change": -45,
+          "result_text": "You ditch a pile of non-essentials, carry loose items in your arms, and make multiple awkward trips. Your back complains, but the move happens.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Shoplift a reusable bag and pretend you brought it",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You slip a $1 bag into your coat. A staff member sees and calls you out. You are escorted out and banned from the store for a month. The shame is immense.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_017",
+      "category": "Part-time Work / Money",
+      "title": "Rude Customer During Shift",
+      "repeatable": true,
+      "description": "A customer in your cafe snarls about the 'rubbish' flat white you made and demands a free replacement. Other customers are watching.",
+      "choices": [
+        {
+          "text": "[SAFE] Remake the coffee and apologise",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 80,
+          "result_text": "You grit your teeth, steam fresh milk, and hand over a perfect cup. The customer grunts. You keep your job but feel like a doormat.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Refuse firmly and cite store policy",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 60,
+          "result_text": "You explain the policy calmly. The customer storms out vowing never to return. Your boss says you handled it well, but the conflict costs you tips and your heart is pounding.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SOCIAL] Make the replacement but 'accidentally' use decaf >_<",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 70,
+          "result_text": "You brew decaf and present it with a sweet smile. The rude customer is none the wiser and leaves. You lose a little tip money, but the petty victory is delicious.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_018",
+      "category": "Part-time Work / Money",
+      "title": "Shift Cancelled Last Minute",
+      "repeatable": true,
+      "description": "You are already dressed and ready to leave when your boss texts: 'Quiet night, don't come in.' Your expected $100 income just evaporated.",
+      "choices": [
+        {
+          "text": "[REST] Enjoy the unexpected free evening :)",
+          "hp_change": 5,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You put on pyjamas, watch Netflix guilt-free, and actually relax. The money void is real but your soul needed this.",
+          "trigger_event": null
+        },
+        {
+          "text": "[WORK] Scramble to find a last-minute delivery shift",
+          "hp_change": -12,
+          "san_change": -8,
+          "money_change": 60,
+          "result_text": "You log into UberEats and pedal around for three hours. You salvage some income but arrive home sweaty and tired.",
+          "trigger_event": null
+        },
+        {
+          "text": "[ADMIN] Complain to the supervisor about the short notice",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You send a pointed email about reliability. The supervisor notes you are 'not a team player.' You may get fewer regular shifts later.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_019",
+      "category": "Part-time Work / Money",
+      "title": "Tax Return Dilemma",
+      "repeatable": false,
+      "description": "It's tax time and you've heard international students often get decent refunds. But the myGov site looks like a labyrinth designed by Kafka.",
+      "choices": [
+        {
+          "text": "[ADMIN] Spend an afternoon doing it yourself online",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 150,
+          "result_text": "You spend the afternoon wrestling with online forms and identification checks. It works, but admin drains your soul.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Pay a tax agent to handle everything",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 100,
+          "result_text": "You pay $80 for a friendly agent who finds a few extra deductions. You net $100 but avoid all stress. Sometimes paying for peace is worth it.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Ignore it and skip lodging entirely",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You bury your head. Months later the ATO sends a penalty notice for failing to lodge. The fine plus the lost refund puts you $250 worse off. Anxiety spikes.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_020",
+      "category": "Part-time Work / Money",
+      "title": "UberEats Long Delivery Peak Boost",
+      "repeatable": true,
+      "description": "A delivery order pops up: $22 for a 9km ride during surge pricing. It is raining heavily and the address is in a hilly suburb.",
+      "choices": [
+        {
+          "text": "[WORK] Accept and pedal through the rain",
+          "hp_change": -12,
+          "san_change": -8,
+          "money_change": 120,
+          "result_text": "You arrive soaked and breathless. The customer tips $5 extra out of pity. You earn well but risk catching a cold.",
+          "trigger_event": null
+        },
+        {
+          "text": "[REST] Decline and go home to a warm shower",
+          "hp_change": 5,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "You turn off the app and let another rider take it. Your evening is cosy and dry, but the missed money stings a little.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Accept but take dodgy shortcuts to save time",
+          "hp_change": -15,
+          "san_change": -12,
+          "money_change": 150,
+          "result_text": "You cut through unlit paths and nearly get hit by a car. The order is 10 minutes early and you get a big tip, but you are shaken and your bike light is broken.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_021",
+      "category": "Part-time Work / Money",
+      "title": "Boss Offers Off-the-Books Extra Hours",
+      "repeatable": true,
+      "description": "Your boss at the restaurant pulls you aside and offers an extra weekend shift... paid in cash, 'under the table'. No tax, no super, just cash in hand.",
+      "choices": [
+        {
+          "text": "[MONEY] Accept the cash shift gladly",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 180,
+          "result_text": "You work a busy brunch service and walk home with $180 in your pocket. It feels great until you wonder if someone might find out. Weeks later, a Fair Work inspection occurs.",
+          "trigger_event": "event_023"
+        },
+        {
+          "text": "[RISK] Take cash-in-hand work and hope nothing goes wrong >_<",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "The cash is tempting, but the lack of payslip makes you nervous. You keep checking visa conditions and imagining terrible emails from immigration.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SOCIAL] Ask a friend who works there what they think",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": 0,
+          "result_text": "Your friend says they always take the cash and it's fine. You still don't know what to do and miss the offer while dithering. The opportunity passes.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_022",
+      "category": "Part-time Work / Money",
+      "title": "Job Interview vs Current Shift",
+      "repeatable": true,
+      "description": "You land an interview for a much better part-time role, but it is scheduled exactly during your current weekly shift. Your manager hates last-minute changes.",
+      "choices": [
+        {
+          "text": "[RISK] Call in sick to attend the interview",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": -108,
+          "result_text": "You fake a cough and go to the interview. It goes well. You lose a day's pay but might gain a better job. Your old boss is suspicious though.",
+          "trigger_event": null
+        },
+        {
+          "text": "[ADMIN] Ask to reschedule the interview",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 80,
+          "result_text": "The new employer says they can't reschedule and fills the role. You keep your current shift and pay, but your heart sinks at the lost chance.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Skip the interview and remain loyal",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 80,
+          "result_text": "You do your shift and the boss gives you a small nod of appreciation. Your job is secure for now, but you wonder 'what if' for weeks.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_023",
+      "category": "Part-time Work / Money",
+      "title": "Fair Work Audit at Your Workplace",
+      "repeatable": false,
+      "description": "Fair Work inspectors arrive unexpectedly at the restaurant asking to see employment records. Your earlier off-the-books shift flashes in your memory.",
+      "choices": [
+        {
+          "text": "[SAFE] Cooperate fully and admit nothing",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You stay quiet and let the boss handle it. The inspection finds minor issues but your cash shift is not traced directly to you. You dodge a bullet but remain anxious.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Come clean to the inspectors about the cash work",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": -108,
+          "result_text": "You explain you felt pressured. The inspectors are understanding but you are required to back-pay tax and super. A $100 penalty eats your past earnings.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Lie and pretend you never worked that day",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You deny everything, but the boss has records showing you on shift. The lie is exposed and you face a formal investigation, risking much heavier fines. Your stress skyrockets.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_024",
+      "category": "Australia Specific",
+      "title": "Magpie Swooping Season",
+      "repeatable": true,
+      "description": "Spring has arrived and so have the territorial magpies. Your usual shortcut through the park is now a warzone. That black-and-white nightmare is waiting.",
+      "choices": [
+        {
+          "text": "[AUS] Wear a helmet and zip-tie spikes to it :)",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": -27,
+          "result_text": "You wear a helmet and add silly-looking cable ties. People stare, but the magpie backs off. You feel ridiculous and alive.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Run full speed and hope for the best",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You sprint while waving your arms. The magpie connects twice, drawing blood on your ear. You escape but have a new phobia of bird calls.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Take the long way around via the main road",
+          "hp_change": -8,
+          "san_change": 0,
+          "money_change": -13,
+          "result_text": "You walk an extra 15 minutes and spend $4 on a bus. No magpie attacks, but you are late and your feet ache.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_025",
+      "category": "Australia Specific",
+      "title": "Heatwave Without Air Conditioning",
+      "repeatable": true,
+      "description": "A brutal 40-degree day hits Sydney. Your rental has no air-con and the pedestal fan just circulates hot air like a convection oven.",
+      "choices": [
+        {
+          "text": "[HOME] Head to the library or shopping centre all day",
+          "hp_change": 10,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You spend hours in blessed air-conditioned public spaces, pretending to study. You stay cool and safe at zero cost.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Buy a portable air conditioner unit",
+          "hp_change": 5,
+          "san_change": 5,
+          "money_change": -207,
+          "result_text": "You blow a huge chunk of savings on a noisy portable unit. It cools one room marginally. Your wallet weeps but your sleep improves.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Tough it out with ice packs and cold showers",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You sit in front of the fan with a wet towel. By evening you have a throbbing headache and possibly mild heat exhaustion. Frugal but foolish.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_026",
+      "category": "Australia Specific",
+      "title": "Bushfire Smoke Haze",
+      "repeatable": true,
+      "description": "A thick blanket of bushfire smoke rolls over the city. The sky turns orange and the air smells like a campfire that has gone horribly wrong.",
+      "choices": [
+        {
+          "text": "[HELP] Buy a P2 mask and stay indoors",
+          "hp_change": 5,
+          "san_change": -8,
+          "money_change": -27,
+          "result_text": "You grab a mask from the chemist and seal your windows. It helps your lungs but the isolation and eerie light don't help your mood.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Go about your day as normal, it's just smoke",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "By evening your throat burns and you can't stop coughing. A trip to the GP later confirms irritated airways. You are given an inhaler and regret.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SOCIAL] Visit a friend whose apartment has air purifiers",
+          "hp_change": 5,
+          "san_change": 10,
+          "money_change": -13,
+          "result_text": "You pay a small bus fare and crash at a friend's place. You watch movies together in filtered air. The social contact lifts your spirits.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_027",
+      "category": "Australia Specific",
+      "title": "Caught in a Rip at the Beach",
+      "repeatable": false,
+      "description": "You finally get a beach day at Bondi. The water is gorgeous, but suddenly you realise you're being pulled sideways and backwards. A rip current has you.",
+      "choices": [
+        {
+          "text": "[SAFE] Stay calm, swim parallel to the shore",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You remember the lesson: don't fight it. You swim sideways and gradually escape the rip, exhausted but alive. The beach safety video actually helped.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Panic and wave desperately for a lifeguard",
+          "hp_change": -12,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "A lifeguard jets out and drags you back to safety. You are deeply embarrassed, but grateful. You buy them a case of beer later.",
+          "trigger_event": null
+        },
+        {
+          "text": "[AUS] Try to fight the rip by swimming directly to shore",
+          "hp_change": -15,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You exhaust yourself in minutes. A rescuer pulls you out just as you start to go under. You spend the night in hospital on oxygen. A terrifying lesson.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_028",
+      "category": "Australia Specific",
+      "title": "Huntsman Spider Roommate",
+      "repeatable": true,
+      "description": "You spot a hand-sized huntsman spider on your bedroom wall above your pillow. It is furry, fast, and utterly terrifying, despite being harmless.",
+      "choices": [
+        {
+          "text": "[AUS] Capture it with a container and release outside",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "Using a large Tupperware and a stiff piece of card, you trap the creature and fling it out the window. Your hands shake for an hour but you are a hero.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Scream for your flatmate to deal with it",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": -13,
+          "result_text": "Your flatmate rolls their eyes and removes it. They expect you to buy them a takeaway pizza as spider tax. Fair enough.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Sleep on the couch and abandon the bedroom -_-",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You spend an uncomfortable night on the lumpy couch. The spider is gone by morning but your back hurts and your dignity is shattered. It might return.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_029",
+      "category": "Australia Specific",
+      "title": "Transport Officers Check Opal Card",
+      "repeatable": true,
+      "description": "You are on the light rail when uniformed officers step on and announce a ticket inspection. You didn't tap on because the reader was broken, but they won't believe that.",
+      "choices": [
+        {
+          "text": "[ADMIN] Explain the situation politely and show the broken reader",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You calmly point out the malfunctioning machine. After a long check, they issue a warning instead of a fine. Your heart rate finally comes down.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Act confused and hope they let you off",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You look overwhelmed and explain badly. Annoyed, they let you off with a stern warning. It works, but you feel awful about the performance.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Just accept the fine and move on",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": -207,
+          "result_text": "You silently take the $250 fine notice. It stings worse than a sunburn. The 'broken reader' excuse dies in your throat.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_030",
+      "category": "Social / Culture Shock",
+      "title": "Aussie BBQ and Vegetarian Woes",
+      "repeatable": true,
+      "description": "Your new Australian friend invites you to a weekend barbie. The air is thick with the smell of sizzling sausages. You are vegetarian and see no meat-free options.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Bring and cook your own veggie patties",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -27,
+          "result_text": "You whip out a pack of plant-based patties from your bag. A few people are curious and try them. You feel included and fed.",
+          "trigger_event": null
+        },
+        {
+          "text": "[FOOD] Eat only bread, salad, and tomato sauce :/",
+          "hp_change": -8,
+          "san_change": -8,
+          "money_change": 0,
+          "result_text": "You make a sad sandwich from the limited sides. It is barely enough, and you feel left out of the communal feast.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Politely say you already ate and just nibble",
+          "hp_change": -8,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You spend the afternoon hungry while everyone asks if you're sure you don't want a snag. Socialising on an empty stomach is not fun.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_031",
+      "category": "Social / Culture Shock",
+      "title": "Bring a Plate Misunderstanding",
+      "repeatable": true,
+      "description": "Your classmate says 'We're having a party, bring a plate!' You, being literal, arrive with an empty ceramic plate from your kitchen. Everyone else has food.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Laugh at yourself and explain the mix-up",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": 0,
+          "result_text": "You turn bright red and admit you thought it meant literal plates. The group finds it hilarious and kind of charming. You become the story of the party, not the outcast.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Rush to the nearest shop and buy a dish",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": -45,
+          "result_text": "You sprint to Coles and grab a pre-made salad. You arrive slightly late but bearing acceptable food. The empty plate stays hidden in your bag.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Double down and pretend the plate is a cultural gift >_<",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You claim in your culture an empty plate symbolises openness. People stare awkwardly. One person mutters 'interesting.' You die inside and leave early.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_032",
+      "category": "Social / Culture Shock",
+      "title": "Lunar New Year Homesickness",
+      "repeatable": false,
+      "description": "Lunar New Year arrives but you are in Sydney, miles from family gatherings, red envelopes, and your family's special dishes. The loneliness is crushing.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Video call family for the entire reunion dinner",
+          "hp_change": 0,
+          "san_change": 15,
+          "money_change": 0,
+          "result_text": "You prop up your laptop and virtually sit at the table. Your relatives shout greetings and you feel the warmth across the ocean. You cry a little but feel better.",
+          "trigger_event": null
+        },
+        {
+          "text": "[FOOD] Go to Chinatown and feast with other lonely souls",
+          "hp_change": 5,
+          "san_change": 10,
+          "money_change": -72,
+          "result_text": "You join the festival crowds, eat a massive meal, and even get a red envelope from a friendly restaurant auntie. The communal celebration lifts your spirit.",
+          "trigger_event": null
+        },
+        {
+          "text": "[STUDY] Ignore the holiday and do readings instead",
+          "hp_change": -8,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You bury yourself in textbooks. Social media posts of everyone else's celebrations make you feel ten times more isolated. Academic productivity does not fill the void.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_033",
+      "category": "Social / Culture Shock",
+      "title": "Noisy Flatmate Party on School Night",
+      "repeatable": true,
+      "description": "It is 11pm on a Tuesday and your flatmate has decided to host a loud gathering with music, laughter, and what sounds like a didgeridoo. You have an 8am tutorial.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Give up on sleep and join the party",
+          "hp_change": -12,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You shrug and grab a solo cup. You end up laughing and meeting new people. Your tutorial performance tomorrow will suffer but you feel connected.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HOME] Bang on the door and demand quiet",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You storm out and yell. The music lowers slightly but the passive-aggressive vibe in the flat freezes over. You get some sleep but breakfast will be awkward for weeks.",
+          "trigger_event": null
+        },
+        {
+          "text": "[REST] Grab earplugs and sleep in the library",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You trudge to the 24-hour library, curl up in a beanbag, and manage a few hours of restless sleep. Your neck hurts but you avoid conflict.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_034",
+      "category": "Social / Culture Shock",
+      "title": "Accidental Taboo Phrase",
+      "repeatable": true,
+      "description": "During a tutorial discussion, you say a word that in Australian English is a mild but embarrassing swear or slur. You meant completely something innocent. The room goes quiet.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Immediately apologise and ask for the correct term",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You flush red and explain you are an international student who did not know. People relax, someone teaches you the right phrase, and the tutorial continues. A learning moment.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Laugh it off and pretend it was a joke",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You force a chuckle and mumble 'just kidding.' Nobody laughs. The awkward silence stretches. You are mentally replaying it for months at 3am.",
+          "trigger_event": null
+        },
+        {
+          "text": "[STUDY] Quickly divert attention to a very academic point",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": 0,
+          "result_text": "You immediately launch into a complex analysis of the reading. The tutor grabs the thread and the moment passes. Most people forget, but you don't.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_035",
+      "category": "Social / Culture Shock",
+      "title": "Dating App Match vs Assignments",
+      "repeatable": true,
+      "description": "You match with someone genuinely interesting on a dating app. They suggest meeting for coffee on Saturday, but you have two major deadlines on Monday.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Say yes and go on the date :D",
+          "hp_change": -8,
+          "san_change": 15,
+          "money_change": -45,
+          "result_text": "You spend a lovely two hours over lattes. The assignments are slightly more rushed later, but your heart feels full. The spark of human connection is worth it.",
+          "trigger_event": null
+        },
+        {
+          "text": "[STUDY] Politely reschedule for after the deadlines",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You explain the situation. They say 'no worries' but the conversation fizzles out. You submit your assignments on time but alone.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Ghost them because you can't face the pressure",
+          "hp_change": 0,
+          "san_change": -15,
+          "money_change": 0,
+          "result_text": "You just stop replying. The guilt eats at you, and whenever you open the app you see their disappointed silence. Your social anxiety deepens.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_036",
+      "category": "Unexpected Good News",
+      "title": "Small Scholarship Win",
+      "repeatable": false,
+      "description": "You receive an email: 'Congratulations, you have been awarded the International Student Merit Scholarship.' However, the award ceremony clashes with an important lab practical.",
+      "choices": [
+        {
+          "text": "[LUCK] Attend the ceremony and collect the full award",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 300,
+          "result_text": "You miss the lab, dropping 5% of your final grade, but you walk the stage and receive the cheque after administration fees. Prestige and money, but academic cost.",
+          "trigger_event": null
+        },
+        {
+          "text": "[ADMIN] Arrange with the office to receive the award in absentia",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 250,
+          "result_text": "You politely explain your lab conflict. They allow a representative to collect the award, so you keep your lab marks and still get most of the benefit.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Decline the scholarship to avoid academic penalty",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You prioritise your studies and reply 'No thank you.' The scholarship goes to the next student. You attend the lab, but a part of you regrets passing up free money painfully.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_037",
+      "category": "Unexpected Good News",
+      "title": "Surprise Tax Refund",
+      "repeatable": false,
+      "description": "The ATO deposits an unexpected $280 into your bank account. The note says 'additional refund from amended assessment.' It's like finding a birthday present from the government.",
+      "choices": [
+        {
+          "text": "[MONEY] Save the entire amount in your emergency fund",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 280,
+          "result_text": "You transfer it straight to savings. The peace of mind from a fatter safety net is a quiet, grown-up joy.",
+          "trigger_event": null
+        },
+        {
+          "text": "[FOOD] Treat yourself to a fancy dinner and a new gadget",
+          "hp_change": 10,
+          "san_change": 15,
+          "money_change": 70,
+          "result_text": "You use most of the refund on a seafood feast and a second-hand tablet for study. It is glorious and lifts your spirits hugely, and you still keep a small net gain.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SOCIAL] Invite your close friends for a celebration meal",
+          "hp_change": 5,
+          "san_change": 10,
+          "money_change": 160,
+          "result_text": "You spend part of the refund on home-cooked dishes and share a joyful evening. The rest goes to savings. Social bonds restored, budget still healthier than before.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_038",
+      "category": "Unexpected Good News",
+      "title": "Boss Offers Permanent Casual Role",
+      "repeatable": false,
+      "description": "Your cafe manager says your work has been excellent and offers to put you on a permanent casual contract with guaranteed weekly hours, but it means a heavier workload.",
+      "choices": [
+        {
+          "text": "[WORK] Accept the contract and secure the income",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 180,
+          "result_text": "You sign the papers. The instant boost in regular pay and job security relieves money stress, but you now juggle more shifts with study. Fatigue sets in.",
+          "trigger_event": null
+        },
+        {
+          "text": "[SAFE] Negotiate for slightly fewer hours than offered",
+          "hp_change": -8,
+          "san_change": 5,
+          "money_change": 100,
+          "result_text": "Your boss agrees to a middle ground. You earn a decent boost without burning out completely. A balanced win.",
+          "trigger_event": null
+        },
+        {
+          "text": "[REST] Decline the offer to protect your study time",
+          "hp_change": 5,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "You politely refuse, valuing your degree over extra cash. The boss respects your priorities. Your bank balance doesn't grow but your GPA might.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_039",
+      "category": "Unexpected Good News",
+      "title": "Found $50 on the Street",
+      "repeatable": true,
+      "description": "Walking to the station, you spot a crisp $50 note lying on the footpath. No one is around. It's the universe offering you a small windfall.",
+      "choices": [
+        {
+          "text": "[LUCK] Pocket it and consider it a good day",
+          "hp_change": 0,
+          "san_change": -8,
+          "money_change": 50,
+          "result_text": "You grab the note and buy a week's worth of groceries guilt-free. A tiny voice asks if it belonged to someone, but you silence it with fresh veggies.",
+          "trigger_event": null
+        },
+        {
+          "text": "[HELP] Hand it in to the police station nearby",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "You take it to the community police desk. The officer looks surprised but takes your details. If unclaimed for 90 days, it's yours. You feel annoyingly virtuous.",
+          "trigger_event": null
+        },
+        {
+          "text": "[MONEY] Use it to buy a group round of coffee for your classmates",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": -45,
+          "result_text": "You turn the found money into flat whites for your tutorial group. People are delighted and you finally learn everyone's names. The social capital is worth more than the note.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_040",
+      "category": "Unexpected Good News",
+      "title": "Free Concert Ticket Before Exam",
+      "repeatable": false,
+      "description": "A friend gives you a free ticket to see your favourite artist tomorrow night. The problem: your final exam is the morning after. The universe is testing you.",
+      "choices": [
+        {
+          "text": "[SOCIAL] Go to the concert and embrace the memory",
+          "hp_change": -12,
+          "san_change": 15,
+          "money_change": 0,
+          "result_text": "You sing your heart out until late. The exam goes a little fuzzy but you scrape through. Whenever you hear that song now, you smile. Worth it.",
+          "trigger_event": null
+        },
+        {
+          "text": "[STUDY] Gift the ticket to someone else and study hard",
+          "hp_change": -8,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You give the ticket to another friend who can't believe their luck. You lock yourself in the library and nail the exam. Discipline tastes bitter but proud.",
+          "trigger_event": null
+        },
+        {
+          "text": "[RISK] Try to do both: concert early, then study all night",
+          "hp_change": -15,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You stay out late, then attempt to cram from midnight. By 4am you are a zombie. The exam is a disaster. At least you saw the band... but at what cost?",
+          "trigger_event": null
+        }
+      ]
+    }
+  ]
+}

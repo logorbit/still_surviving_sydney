@@ -1,0 +1,664 @@
+{
+  "events": [
+    {
+      "id": "event_001",
+      "category": "Academic Pressure",
+      "title": "Midnight Library Power Outage",
+      "repeatable": false,
+      "description": "You're hitting the books at Fisher Library at 11pm when a thunderstorm cuts the power. Darkness swallows the stacks, and your laptop battery is at 6%. Time for some creative study solutions.",
+      "choices": [
+        {
+          "text": "📱 Study by phone flashlight and hope your eyes survive",
+          "hp_change": -6,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You squint at your screen, your retinas burn, and the autocorrect turns 'hypothesis' into 'hippopotamus'. Your essay is... unique.",
+          "trigger_event": null
+        },
+        {
+          "text": "💤 Improvise a pillow fort and nap on the library couch",
+          "hp_change": 10,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You wake up three hours later, lights back on, feeling refreshed. You've missed the chance to finish the chapter, but you're well-rested.",
+          "trigger_event": null
+        },
+        {
+          "text": "🚗 Call a classmate to share an Uber home and rant",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -23,
+          "result_text": "You vent about your supervisor and the storm. Your classmate buys you a late-night bubble tea. Friends made!",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_002",
+      "category": "Social / Culture Shock",
+      "title": "Awkward Barbie Banter",
+      "repeatable": true,
+      "description": "At an Aussie backyard BBQ, you try to compliment the host's meat pie but accidentally call it a 'lovely little meat blanket'. Silence falls. The dog looks at you funny.",
+      "choices": [
+        {
+          "text": "😂 Laugh it off and ask them to teach you real Aussie slang",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "The group cracks up. You learn 'stubby', 'sanga', and how to say 'sick c***' in a friendly way. You've made mates.",
+          "trigger_event": null
+        },
+        {
+          "text": "🤔 Double down and insist it's an ancient international-student proverb",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "Everyone stares. You later cry in the Uber while the driver plays Ed Sheeran. The 'meat blanket' legend lives on.",
+          "trigger_event": null
+        },
+        {
+          "text": "🧀 Escape to the esky and offer to get everyone drinks, hiding",
+          "hp_change": 5,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You hide by the esky, stress-eating Tim Tams. The host later finds you and challenges you to a Vegemite spoon showdown tomorrow, as retribution for the 'meat blanket'.",
+          "trigger_event": "event_015"
+        }
+      ]
+    },
+    {
+      "id": "event_003",
+      "category": "Daily Life Struggles",
+      "title": "The Washing Machine Coin Heist",
+      "repeatable": true,
+      "description": "Your building's laundry room demands $4 in coins, but you only have a crisp $20 note and the change machine has a handwritten 'OUT OF ORDER' sign that's been there since 2019.",
+      "choices": [
+        {
+          "text": "💰 Scavenge your flat's couch cushions for hidden treasure",
+          "hp_change": 0,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You find $3.80 in shrapnel, a stale Cheezel, and a 2018 library receipt. Close, but not enough. You wear a slightly damp towel as a toga.",
+          "trigger_event": null
+        },
+        {
+          "text": "🧋 Do laundry at a friend's place, bribing them with bubble tea",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": -12,
+          "result_text": "Your friend agrees, you gossip about group projects, and you get clean clothes. Worth the $12.",
+          "trigger_event": null
+        },
+        {
+          "text": "👃 Febreze the dirty clothes and hope for the best",
+          "hp_change": -6,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You spray enough Febreze to fumigate a crime scene. Your group project partner sniffs audibly but says nothing.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_004",
+      "category": "Australia Specific",
+      "title": "Magpie Swooping Season",
+      "repeatable": true,
+      "description": "You're walking to campus when a territorial magpie decides your head is its personal punching bag. Locals are sprinting past with bike helmets held high like gladiators.",
+      "choices": [
+        {
+          "text": "🚴 Zip-tie googly eyes to your helmet and bike through, fast",
+          "hp_change": -12,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You pedal like a maniac but misjudge a curb, flying over the handlebars. The magpie seems satisfied.",
+          "trigger_event": null
+        },
+        {
+          "text": "🎵 Walk backwards slowly singing Waltzing Matilda, as the internet advises",
+          "hp_change": -6,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "The magpie hesitates, confused, but still gives you a warning peck. You now know the second verse.",
+          "trigger_event": null
+        },
+        {
+          "text": "🥟 Take a scenic detour through the park, buying a mystery meat pie",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": -6,
+          "result_text": "You avoid the magpie and enjoy a suspicious-looking pie that might be possum? The park is lovely though.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_005",
+      "category": "Part-time Work / Money",
+      "title": "The Mysteriously Generous Tip",
+      "repeatable": false,
+      "description": "During a busy brunch shift at the café, a quiet customer pays with $50 cash and hands you a note saying 'For your studies, from an ex-international student'. You're stunned.",
+      "choices": [
+        {
+          "text": "📚 Keep it and buy that required textbook you've been avoiding",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 50,
+          "result_text": "You purchase the textbook and feel a warm glow. The universe is kind.",
+          "trigger_event": null
+        },
+        {
+          "text": "🤝 Track down the customer outside to ask if it was a mistake",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "You catch them, they smile and say 'You deserve it.' You float back to work.",
+          "trigger_event": null
+        },
+        {
+          "text": "💖 Split the tip with your coworker who's having a rough day",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 25,
+          "result_text": "You give half to Jess, who nearly cries. You now have a café bestie. Morale +100.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_006",
+      "category": "Academic Pressure",
+      "title": "Group Project Free Rider",
+      "repeatable": true,
+      "description": "Your group assignment is due in 48 hours. One member has contributed nothing but a blank Google Doc and three memes of a dancing koala. The panic is real.",
+      "choices": [
+        {
+          "text": "☕ Do their entire part yourself, fueled by 4 coffees and pure spite",
+          "hp_change": -12,
+          "san_change": -18,
+          "money_change": 0,
+          "result_text": "You submit a masterpiece at 4am, then collapse. The free rider gets an equal mark but you're dead inside.",
+          "trigger_event": null
+        },
+        {
+          "text": "📧 Confront them calmly with the lecturer in CC and documented evidence",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "They grudgingly complete the bare minimum after a stern email. Your sanity is intact.",
+          "trigger_event": null
+        },
+        {
+          "text": "🗑️ Sabotage by leaving their name off the cover page",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "The lecturer notices and deducts marks from everyone for 'lack of teamwork'. The drama is cinematic.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_007",
+      "category": "Social / Culture Shock",
+      "title": "The K-Pop Karaoke Night",
+      "repeatable": true,
+      "description": "Your new local crew books a private karaoke room and insists you join their K-Pop marathon. You don't know a single song beyond 'Gangnam Style'.",
+      "choices": [
+        {
+          "text": "🐎 Go all-out with Gangnam Style, full horse dance, no shame",
+          "hp_change": 0,
+          "san_change": 15,
+          "money_change": 0,
+          "result_text": "The room erupts. You become a legend, the highlight of their story for weeks. Soju is raised in your honour.",
+          "trigger_event": null
+        },
+        {
+          "text": "🇨🇳 Counter with a Mandarin power ballad and teach them the chorus",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "They butcher the tones but love the melody. Cross-cultural exchange achieved.",
+          "trigger_event": null
+        },
+        {
+          "text": "🎤 Fumble with the machine and accidentally order 3 jugs of Soju",
+          "hp_change": 0,
+          "san_change": -6,
+          "money_change": -35,
+          "result_text": "The bill arrives and your wallet cries. But after the Soju, nobody remembers the slip-up.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_008",
+      "category": "Daily Life Struggles",
+      "title": "The Midnight Opal Card Malfunction",
+      "repeatable": true,
+      "description": "It's 11pm at Redfern station. Your Opal card balance is negative, the top-up machine only takes card, and your bank card is frozen due to 'suspicious activity'—that suspicious activity being you buying 2am kebab.",
+      "choices": [
+        {
+          "text": "👵 Politely ask a stranger to tap you on",
+          "hp_change": 0,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "A kind grandmother in a Werrington Panthers jersey taps you through. You feel touched but also like a child.",
+          "trigger_event": null
+        },
+        {
+          "text": "🥷 Leap the barrier like a ninja",
+          "hp_change": 0,
+          "san_change": -25,
+          "money_change": -230,
+          "result_text": "Transport officers materialise instantly. You receive a $230 fine and a lecture about fare evasion. Shame.",
+          "trigger_event": null
+        },
+        {
+          "text": "🚗 Call an Uber, surge pricing be damned",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": -69,
+          "result_text": "You get home safely but your bank balance now resembles a sad face. At least you're warm.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_009",
+      "category": "Unexpected Good News",
+      "title": "Lunar New Year Red Packet Surprise",
+      "repeatable": false,
+      "description": "Your landlord Margaret, a 70-year-old Aussie lady who grows lemons, hands you a red envelope for Lunar New Year. Inside: $88 AUD, because she read that 8 is lucky.",
+      "choices": [
+        {
+          "text": "🥟 Host a dumpling-making party and invite the whole floor",
+          "hp_change": 0,
+          "san_change": 15,
+          "money_change": 58,
+          "result_text": "You and your friends make messy dumplings. Margaret joins and brings lemon cake. A beautiful cultural exchange. (Net +$58 after party supplies)",
+          "trigger_event": null
+        },
+        {
+          "text": "🏦 Save it for a rainy day in your emergency fund",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 88,
+          "result_text": "You stash it in your sock drawer. Financial security feels cosy.",
+          "trigger_event": null
+        },
+        {
+          "text": "📖 Buy the textbooks you've been avoiding all semester",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You finally own the required reading. It costs exactly $88, so the envelope goes straight to knowledge. You feel responsible.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_010",
+      "category": "Australia Specific",
+      "title": "Huntsman Spider in the Shower",
+      "repeatable": true,
+      "description": "You step into the shower, half-asleep, and spot a huntsman spider the size of a saucer meditating on the tiles. It's not venomous, but it's... present.",
+      "choices": [
+        {
+          "text": "😱 Scream and sprint out naked",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "Your flatmate films your exit and posts it on Snapchat with inspirational music. You're campus famous.",
+          "trigger_event": null
+        },
+        {
+          "text": "🕷️ Calmly trap it under a Tupperware and release it outside",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "You bravely capture it, release it into the garden, and feel like Steve Irwin's spiritual successor.",
+          "trigger_event": null
+        },
+        {
+          "text": "🚿 Turn the water on and pray it doesn't fall on you",
+          "hp_change": -6,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You slip in panic but emerge clean. The spider disappears down the drain, and you'll never sleep soundly again.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_011",
+      "category": "Daily Life Struggles",
+      "title": "Cooktop Inferno & Fire Brigade Visit",
+      "repeatable": true,
+      "description": "You attempt a proper late-night stir-fry, but the wok catches fire and the smoke alarm screams. Within minutes, the fire brigade arrives—auto-response, no joke.",
+      "choices": [
+        {
+          "text": "🧹 Frantically fan the alarm with a dish towel",
+          "hp_change": 0,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You silence the alarm, but the entire apartment reeks of burnt chilli. The firemen radio in a false alarm.",
+          "trigger_event": null
+        },
+        {
+          "text": "👨‍🚒 Apologise to the firemen and offer them charred veg",
+          "hp_change": 0,
+          "san_change": -6,
+          "money_change": -173,
+          "result_text": "They chuckle, give a warning, but the false call-out fee is $173. Your stir-fry is now the most expensive meal.",
+          "trigger_event": null
+        },
+        {
+          "text": "🤷 Hide in your room and blame the 20-year-old toaster",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "The firemen eventually leave muttering about 'international students and toast'. Your landlord emails a stern reminder.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_012",
+      "category": "Academic Pressure",
+      "title": "Plagiarism Scare Email",
+      "repeatable": false,
+      "description": "You open your inbox to a Turnitin report: '23% similarity detected' in your essay. Your heart plummets. But you know you cited everything properly… right?",
+      "choices": [
+        {
+          "text": "😰 Re-read the essay 10 times in a panic, imagining worst-case scenarios",
+          "hp_change": -6,
+          "san_change": -18,
+          "money_change": 0,
+          "result_text": "You lose sleep, but the cited quotes are all fine. Anxiety is the real plagiarism.",
+          "trigger_event": null
+        },
+        {
+          "text": "📧 Calmly email the tutor with the citations and your original draft",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "Your tutor confirms it's all safe. You breathe for the first time in a day.",
+          "trigger_event": null
+        },
+        {
+          "text": "🙈 Ignore the email and hope it goes away",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You forget for a while, but anxiety lingers in the background like a bad hangover.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_013",
+      "category": "Part-time Work / Money",
+      "title": "Overtime Shift for Tourists",
+      "repeatable": false,
+      "description": "Your manager at the souvenir shop asks you to work double shifts this weekend because a huge tour group is coming, and you're the only multilingual staff member available. They offer double pay.",
+      "choices": [
+        {
+          "text": "🤑 Grind through 8 hours straight, become a retail machine",
+          "hp_change": -18,
+          "san_change": -6,
+          "money_change": 200,
+          "result_text": "You sell 43 koala plushies. Your feet are destroyed, but your bank account is strong.",
+          "trigger_event": null
+        },
+        {
+          "text": "😌 Negotiate to work just 4 hours for a premium rate",
+          "hp_change": -6,
+          "san_change": 5,
+          "money_change": 100,
+          "result_text": "You work a manageable shift, bond with a tourist about the importance of UGG boots, and still have study time.",
+          "trigger_event": null
+        },
+        {
+          "text": "📚 Decline, prioritise your assignment due Monday",
+          "hp_change": 0,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You stay home and finish an essay, but FOMO hits as you see a WhatsApp photo of your coworker holding a koala.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_014",
+      "category": "Unexpected Good News",
+      "title": "Scholarship Extension Approved",
+      "repeatable": false,
+      "description": "You applied for a $300 emergency grant for international students months ago and forgot about it. Today an email arrives: 'Approved'. It's like finding a golden ticket in a Tim Tam.",
+      "choices": [
+        {
+          "text": "🏠 Pay this month's rent upfront and breathe",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 300,
+          "result_text": "You transfer the rent instantly. Your landlord sends a heart emoji. Financial stress? Never heard of her.",
+          "trigger_event": null
+        },
+        {
+          "text": "🏞️ Splurge on a weekend trip to the Blue Mountains",
+          "hp_change": 5,
+          "san_change": 15,
+          "money_change": 243,
+          "result_text": "You book a hostel, hike the Three Sisters, and return with 200 photos and a sunburn. Worth every cent. (Net +243 after trip costs)",
+          "trigger_event": null
+        },
+        {
+          "text": "💰 Save it all in a high-interest account (0.1%) and feel smug",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 300,
+          "result_text": "You watch the interest accumulate: 3 cents. You feel secure, if not rich.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_015",
+      "category": "Social / Culture Shock",
+      "title": "The Flatmate's Vegemite Challenge",
+      "repeatable": true,
+      "description": "Your Aussie flatmate presents a heaped spoonful of Vegemite, glistening menacingly. 'One spoonful, no water. Prove you're fair dinkum.' The gauntlet is thrown.",
+      "choices": [
+        {
+          "text": "😋 Down it with a stone-cold face and a thumbs up",
+          "hp_change": -6,
+          "san_change": 15,
+          "money_change": 0,
+          "result_text": "You swallow the salty tar. Your flatmate cheers. You have earned the title 'Honorary Aussie'. Need water.",
+          "trigger_event": null
+        },
+        {
+          "text": "🍞 Smear it on toast with butter like a civilized person",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "They call you a wuss, but you enjoy the umami goodness. You live to fight another day.",
+          "trigger_event": null
+        },
+        {
+          "text": "😵 Dramatically fake faint on the kitchen floor",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "They panic, you 'revive' and escape. Later, they call you a comedic genius. The Vegemite remains untouched.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_016",
+      "category": "Australia Specific",
+      "title": "Bushfire Smoke Haze Day",
+      "repeatable": true,
+      "description": "A thick blanket of bushfire smoke turns the sky orange and the air acrid. The health app screams 'HAZARDOUS'. You have a lecture in 30 minutes.",
+      "choices": [
+        {
+          "text": "😷 Buy a P2 mask and power through the smokepocalypse",
+          "hp_change": -6,
+          "san_change": -6,
+          "money_change": -12,
+          "result_text": "You trudge to class looking like a dystopian survivor. The mask helps, but you still sound like a 40-year smoker.",
+          "trigger_event": null
+        },
+        {
+          "text": "📺 Skip class, seal all windows, and binge Bluey",
+          "hp_change": -6,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You miss an important guest lecture, but you learn more about Australian family values from cartoon dogs.",
+          "trigger_event": null
+        },
+        {
+          "text": "🍜 Order UberEats pho and study from home",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": -35,
+          "result_text": "Hot soup arrives. You finish your readings in pyjamas, feeling smug.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_017",
+      "category": "Academic Pressure",
+      "title": "Midnight Essay Extension Request",
+      "repeatable": false,
+      "description": "It's 11:58pm, the essay deadline is in 2 minutes, and the online submission portal has crashed due to 'unexpected maintenance'. Your carefully formatted PDF is trapped.",
+      "choices": [
+        {
+          "text": "📸 Screenshot the error and email your lecturer with desperate politeness",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "The lecturer grants a 2-hour extension. You submit at 1:30am, exhausted but legally alive.",
+          "trigger_event": null
+        },
+        {
+          "text": "🔄 Refresh the page furiously, bargaining with tech gods",
+          "hp_change": -12,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "At 3am, the portal revives. You submit with seconds to spare, cursing the digital age.",
+          "trigger_event": null
+        },
+        {
+          "text": "🌐 Download a VPN, switch regions, and hack the system",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -6,
+          "result_text": "Miraculously, the portal works through the VPN. You submit on time, feeling like a cyberpunk hero.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_018",
+      "category": "Part-time Work / Money",
+      "title": "The Great Cafe Tip Jar Theft",
+      "repeatable": false,
+      "description": "During a frantic lunch rush, you notice the tip jar—filled with about $70—has vanished. It was your shift to watch. Your manager is glaring.",
+      "choices": [
+        {
+          "text": "💸 Offer to cover the loss from your own tips and wages",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": -69,
+          "result_text": "You pay up, feeling noble. Your boss softens, and your coworkers secretly pass the hat to repay you.",
+          "trigger_event": null
+        },
+        {
+          "text": "🔍 Check the security camera and report to police",
+          "hp_change": 0,
+          "san_change": -6,
+          "money_change": 0,
+          "result_text": "You spot a blurry figure in a hoodie. The thief is eventually caught, but the process drains your evening.",
+          "trigger_event": null
+        },
+        {
+          "text": "🫥 Pretend you didn't see anything and avoid eye contact",
+          "hp_change": 0,
+          "san_change": -18,
+          "money_change": 0,
+          "result_text": "Guilt gnaws at you. Coworkers whisper. Your reputation as 'the one who let it happen' sticks for weeks.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_019",
+      "category": "Australia Specific",
+      "title": "The Mysterious 'Bin Chook' Encounter",
+      "repeatable": true,
+      "description": "You take out the trash and come face-to-face with a massive bush turkey (affectionately called a 'bin chook') excavating your bin like an archaeologist.",
+      "choices": [
+        {
+          "text": "🧹 Shoo it away with a broom and a firm 'Oi!'",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "The turkey retreats, giving you a look of deep disappointment. You feel like a real Aussie.",
+          "trigger_event": null
+        },
+        {
+          "text": "🤳 Snap a selfie, then feed it some bread (forbidden)",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "Instagram loves it. The turkey returns daily at 3pm. You've accidentally adopted a bin chook.",
+          "trigger_event": null
+        },
+        {
+          "text": "😱 Scream, slip on a stray banana peel, and fall backwards",
+          "hp_change": -6,
+          "san_change": -12,
+          "money_change": 0,
+          "result_text": "You land in a puddle. The turkey judges you silently. Your flatmate captures the moment for eternity.",
+          "trigger_event": null
+        }
+      ]
+    },
+    {
+      "id": "event_020",
+      "category": "Unexpected Good News",
+      "title": "Mystery Care Package from Home",
+      "repeatable": false,
+      "description": "A battered box from home arrives, covered in customs tape. Inside: chilli crisp, instant noodles, spicy snacks, and a handwritten letter from family.",
+      "choices": [
+        {
+          "text": "📞 Call Mum immediately and ugly cry",
+          "hp_change": 0,
+          "san_change": 15,
+          "money_change": 0,
+          "result_text": "You sob for 20 minutes while she tells you to 'eat more vegetables'. You feel homesick but deeply loved.",
+          "trigger_event": null
+        },
+        {
+          "text": "🥳 Share the snacks with your flatmates and host an international snack tasting",
+          "hp_change": 0,
+          "san_change": 10,
+          "money_change": 0,
+          "result_text": "Your flatmates discover the glory of spicy strips. Cultural exchange and empty packets abound.",
+          "trigger_event": null
+        },
+        {
+          "text": "🔒 Hoard everything under your bed for emergency comfort",
+          "hp_change": 0,
+          "san_change": 5,
+          "money_change": 0,
+          "result_text": "You have a secret stash for bad days. It feels safe, but a bit lonely.",
+          "trigger_event": null
+        }
+      ]
+    }
+  ]
+}
