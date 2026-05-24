@@ -2,7 +2,7 @@
 
 ## About Game:
 
-A text-based life simulator about surviving everyday Aussie problems as an international student doing a Master's in Au. Every in-game day throws 3 or more random events at you; every choice moves three stats (HP, San, Money). Survivea 15-day semester or last as long as you can in endless Time Mode.
+A text-based life simulator about surviving everyday Aussie problems as an international student doing a Master's in Au. Every in-game day throws 3 or more random events at you; every choice moves three stats (HP, San, Money). Survivea 15 day semester or last as long as you can in endless Time Mode.
 
 ## How it run:
 
